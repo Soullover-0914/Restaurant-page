@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>byteXL New Flavours - Menu</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header and Navigation -->
+    <header class="bg-gray-900 text-white p-4 shadow-lg w-full z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold text-yellow-400">byteXL</div>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="nav-link hover:text-yellow-400 transition duration-300 ease-in-out">HOME</a></li>
+                <li><a href="about.html" class="nav-link hover:text-yellow-400 transition duration-300 ease-in-out">ABOUT US</a></li>
+                <li><a href="menu.html" class="nav-link hover:text-yellow-400 transition duration-300 ease-in-out">MENU</a></li>
+                <li><a href="gallery.html" class="nav-link hover:text-yellow-400 transition duration-300 ease-in-out">GALLERY</a></li>
+                <li><a href="reservation.html" class="nav-link hover:text-yellow-400 transition duration-300 ease-in-out">RESERVATION</a></li>
+                <li><a href="location.html" class="nav-link hover:text-yellow-400 transition duration-300 ease-in-out">LOCATION</a></li>
+                <li><a href="blog.html" class="nav-link hover:text-yellow-400 transition duration-300 ease-in-out">BLOG</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 bg-gray-100 min-h-screen flex flex-col justify-center">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-12 section-title">Our Menu</h2>
+            <div class="flex justify-center space-x-4 mb-8">
+                <button class="filter-button bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-6 rounded-full transition duration-300 ease-in-out active" data-category="all">All</button>
+                <button class="filter-button bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-6 rounded-full transition duration-300 ease-in-out" data-category="vegetarian">Vegetarian</button>
+                <button class="filter-button bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-6 rounded-full transition duration-300 ease-in-out" data-category="non-vegetarian">Non-Vegetarian</button>
+                <button class="filter-button bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-6 rounded-full transition duration-300 ease-in-out" data-category="special">Special Items</button>
+                <button class="filter-button bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-6 rounded-full transition duration-300 ease-in-out" data-category="desserts">Desserts</button>
+            </div>
+
+            <div id="menu-items" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Existing Menu Items -->
+                <div class="menu-item-card bg-white rounded-lg shadow-md overflow-hidden p-6 text-left" data-category="vegetarian">
+                    <img src="https://thumbs.dreamstime.com/b/salad-lettuce-ranch-dressing-garden-fresh-vegetables-glass-plate-30669788.jpg" alt="Garden Fresh Salad" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Garden Fresh Salad</h3>
+                    <p class="text-gray-700 mb-3">Crisp greens, cherry tomatoes, cucumber, and a light vinaigrette dressing.</p>
+                    <span class="text-yellow-600 text-xl font-bold">₹126.99</span>
+                </div>
+                <div class="menu-item-card bg-white rounded-lg shadow-md overflow-hidden p-6 text-left" data-category="non-vegetarian">
+                    <img src="https://t3.ftcdn.net/jpg/11/77/96/10/360_F_1177961093_kk23GMKWiPJdQf6a9Rc1FiOxwIvrmbYD.jpg" alt="Grilled Salmon" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Grilled Salmon</h3>
+                    <p class="text-gray-700 mb-3">Perfectly grilled salmon fillet with asparagus and lemon butter sauce.</p>
+                    <span class="text-yellow-600 text-xl font-bold">₹399.50</span>
+                </div>
+                <div class="menu-item-card bg-white rounded-lg shadow-md overflow-hidden p-6 text-left" data-category="special">
+                    <img src="https://st4.depositphotos.com/5697630/38092/i/450/depositphotos_380922666-stock-photo-tasty-appetizing-spaghetti-pasta-tomato.jpg" alt="Chef's Special Pasta" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Chef's Special Pasta</h3>
+                    <p class="text-gray-700 mb-3">Homemade pasta with a rich creamy sauce and seasonal vegetables.</p>
+                    <span class="text-yellow-600 text-xl font-bold">₹246.75</span>
+                </div>
+                <div class="menu-item-card bg-white rounded-lg shadow-md overflow-hidden p-6 text-left" data-category="vegetarian">
+                    <img src="https://herbivorecucina.com/wp-content/uploads/2021/09/Easy-Paneer-Vegetable-Biryani-00001.jpg" alt="Vegetable Biryani" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Vegetable Biryani</h3>
+                    <p class="text-gray-700 mb-3">Aromatic basmati rice cooked with fresh vegetables and exotic spices.</p>
+                    <span class="text-yellow-600 text-xl font-bold">₹249.00</span>
+                </div>
+                <div class="menu-item-card bg-white rounded-lg shadow-md overflow-hidden p-6 text-left" data-category="non-vegetarian">
+                    <img src="https://i.ytimg.com/vi/n7EmpanX7io/maxresdefault.jpg" alt="Chicken Tikka Masala" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Chicken Tikka Masala</h3>
+                    <p class="text-gray-700 mb-3">Tender chicken pieces in a rich, creamy tomato sauce, served with naan.</p>
+                    <span class="text-yellow-600 text-xl font-bold">₹219.00</span>
+                </div>
+                <div class="menu-item-card bg-white rounded-lg shadow-md overflow-hidden p-6 text-left" data-category="special">
+                    <img src="https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg" alt="Truffle Mushroom Risotto" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Truffle Mushroom Risotto</h3>
+                    <p class="text-gray-700 mb-3">Creamy arborio rice with wild mushrooms and black truffle oil.</p>
+                    <span class="text-yellow-600 text-xl font-bold">₹368.00</span>
+                </div>
+
+                <!-- New Seasonal Menu Items -->
+                <div class="menu-item-card bg-white rounded-lg shadow-md overflow-hidden p-6 text-left" data-category="vegetarian">
+                    <img src="https://images.pexels.com/photos/9337073/pexels-photo-9337073.jpeg" alt="Chilled Cucumber and Mint Soup" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Chilled Cucumber and Mint Soup</h3>
+                    <p class="text-gray-700 mb-3">A light and invigorating start to your meal, perfect for warm evenings.</p>
+                    <span class="text-yellow-600 text-xl font-bold">₹150.00</span>
+                </div>
+                <div class="menu-item-card bg-white rounded-lg shadow-md overflow-hidden p-6 text-left" data-category="vegetarian">
+                    <img src="https://images.pexels.com/photos/27239658/pexels-photo-27239658.jpeg" alt="Heirloom Tomato and Burrata Salad" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Heirloom Tomato and Burrata Salad</h3>
+                    <p class="text-gray-700 mb-3">Showcasing the sweetness of local tomatoes with creamy burrata, fresh basil, and a balsamic glaze.</p>
+                    <span class="text-yellow-600 text-xl font-bold">₹280.00</span>
+                </div>
+                <div class="menu-item-card bg-white rounded-lg shadow-md overflow-hidden p-6 text-left" data-category="vegetarian">
+                    <img src="https://images.pexels.com/photos/27630013/pexels-photo-27630013.jpeg" alt="Spicy Watermelon and Feta Skewers" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Spicy Watermelon and Feta Skewers</h3>
+                    <p class="text-gray-700 mb-3">A surprising and delightful combination of sweet, salty, and spicy.</p>
+                    <span class="text-yellow-600 text-xl font-bold">₹190.00</span>
+                </div>
+                <div class="menu-item-card bg-white rounded-lg shadow-md overflow-hidden p-6 text-left" data-category="non-vegetarian">
+                    <img src="https://images.pexels.com/photos/2679501/pexels-photo-2679501.jpeg" alt="Pan-Seared Halibut with Lemon-Dill Sauce" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Pan-Seared Halibut with Lemon-Dill Sauce</h3>
+                    <p class="text-gray-700 mb-3">Perfectly flaky halibut bursting with fresh, zesty flavors, served with seasonal greens.</p>
+                    <span class="text-yellow-600 text-xl font-bold">₹450.00</span>
+                </div>
+                <div class="menu-item-card bg-white rounded-lg shadow-md overflow-hidden p-6 text-left" data-category="vegetarian">
+                    <img src="https://images.pexels.com/photos/1143754/pexels-photo-1143754.jpeg" alt="Summer Vegetable Lasagna" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Summer Vegetable Lasagna</h3>
+                    <p class="text-gray-700 mb-3">Layers of fresh zucchini, bell peppers, spinach, and ricotta cheese, baked to golden perfection.</p>
+                    <span class="text-yellow-600 text-xl font-bold">₹290.00</span>
+                </div>
+                <div class="menu-item-card bg-white rounded-lg shadow-md overflow-hidden p-6 text-left" data-category="non-vegetarian">
+                    <img src="https://i.ytimg.com/vi/tX-34g3TLlM/sddefault.jpg" alt="Mango Glazed Pork Tenderloin" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Mango Glazed Pork Tenderloin</h3>
+                    <p class="text-gray-700 mb-3">Tender pork medallions with a sweet and tangy mango glaze, served with coconut rice.</p>
+                    <span class="text-yellow-600 text-xl font-bold">₹380.00</span>
+                </div>
+                <div class="menu-item-card bg-white rounded-lg shadow-md overflow-hidden p-6 text-left" data-category="desserts">
+                    <img src="https://images.pexels.com/photos/26083401/pexels-photo-26083401.jpeg" alt="Berry Pavlova" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Berry Pavlova</h3>
+                    <p class="text-gray-700 mb-3">A light and crispy meringue with fresh mixed berries and whipped cream.</p>
+                    <span class="text-yellow-600 text-xl font-bold">₹220.00</span>
+                </div>
+                <div class="menu-item-card bg-white rounded-lg shadow-md overflow-hidden p-6 text-left" data-category="desserts">
+                    <img src="https://images.pexels.com/photos/1098592/pexels-photo-1098592.jpeg" alt="Lemon Lavender Panna Cotta" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Lemon Lavender Panna Cotta</h3>
+                    <p class="text-gray-700 mb-3">A smooth and silky Italian dessert with a delicate floral hint.</p>
+                    <span class="text-yellow-600 text-xl font-bold">₹180.00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="https://facebook.com" target="_blank" class="text-gray-400 hover:text-yellow-400 text-3xl transition duration-300 ease-in-out"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank" class="text-gray-400 hover:text-yellow-400 text-3xl transition duration-300 ease-in-out"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank" class="text-gray-400 hover:text-yellow-400 text-3xl transition duration-300 ease-in-out"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="text-gray-500 text-sm">&copy; 2025 byteXL New Flavours. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
